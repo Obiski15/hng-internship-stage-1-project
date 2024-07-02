@@ -52,9 +52,8 @@ const slider = function () {
 
   //previous slide
   const prevSlide = function () {
-    if (curSlide === 0) {
-      curSlide = maxSlide - 1;
-    } else {
+    if (curSlide === 0) return;
+    else {
       curSlide--;
     }
     goToSlide(curSlide);
